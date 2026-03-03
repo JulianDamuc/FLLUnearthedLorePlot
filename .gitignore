@@ -1,0 +1,9 @@
+# Generated chart output
+*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
