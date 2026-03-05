@@ -129,7 +129,7 @@ def visualize(
         tick_labels    = [seconds_to_label(e) for e in tick_positions]
         ax_hist.set_xticks(tick_positions)
         ax_hist.set_xticklabels(tick_labels, rotation=45, ha="right", fontsize=8)
-        ax_hist.set_xlim(bin_edges[0] - 2, bin_edges[-1] + 2)
+        ax_hist.set_xlim(bin_edges[-1] + 2, bin_edges[0] - 2)
     else:
         ax_hist.text(
             0.5, 0.5, "No completed tasks",
